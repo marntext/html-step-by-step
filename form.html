@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="form.html" method="post">
+        <h1>Signup form</h1>
+        <fieldset>
+            <legend>Your Basic Information</legend>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="user_name"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="user_email"><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="user_password"><br><br>
+
+            <label>Gender</label><br>
+            <input type="radio" id="male" value="male" name="user_gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="female" name="user_gender">
+            <label for="female">Female</label>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Profile Information</legend>
+            <label for="bio">Bio</label><br>
+            <textarea name="user_bio" id="bio" cols="30" rows="10"></textarea><br><br>
+            <label for="job">Job Position</label>
+            <select name="user_name" id="job">
+                <optgroup label="Web">
+                    <option value="web_developer">Web Developer</option>
+                    <option value="frontend_developer">Frontend Developer</option>
+                    <option value="php_developer">PHP Developer</option>
+                    <option value="python_developer">Python Developer</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="android_developer">Android Developer</option>
+                    <option value="IOS_developer">IOS Developer</option>
+                    <option value="reactnative_developer">React Native Developer</option>
+                    <option value="flutter_developer">Flutter Developer</option>
+                </optgroup>
+                <optgroup label="Business">
+                    <option value="business_owner">Business Owner</option>
+                    <option value="freelancer">Freelancer</option>
+                </optgroup>
+            </select>
+                <br><br>
+                
+                <label>Choose Interested Languages</label><br>
+                <input type="checkbox" id="html" value="html" name="languages">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" value="css" name="languages">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="javascript" value="javascript" name="languages">
+                <label for="javascript">Javascript</label>
+
+                <input type="checkbox" id="react" value="react" name="languages">
+                <label for="react">React</label>
+            
+        </fieldset>
+        <br>
+
+        <button type="submit">Signup</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+</html>
